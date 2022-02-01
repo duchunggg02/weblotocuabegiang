@@ -114,7 +114,7 @@ function tinh() {
   document.getElementById("soxo").innerHTML = so;
 }
 function reset() {
-  if (confirm("Mày có chắc muốn chơi ván mới không ??")) {
+  if (alert("Mày có chắc muốn chơi ván mới không ??")) {
     location.reload();
   }
 }
