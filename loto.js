@@ -114,7 +114,17 @@ function tinh() {
   document.getElementById("soxo").innerHTML = so;
 }
 function reset() {
-  if (comfirm("Mày có chắc muốn chơi ván mới không ??")) {
-    location.reload();
+  let confirm = document.getElementById("popup");
+  if (!confirm.classList.contains("popup-open")) {
+    confirm.classList.add("popup-open");
   }
+}
+
+function onCancel() {
+  let confirm = document.getElementById("popup");
+  confirm.classList.remove("popup-open");
+}
+
+function onConfirm() {
+  location.reload();
 }
