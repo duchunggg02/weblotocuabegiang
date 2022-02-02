@@ -96,7 +96,9 @@ function chay() {
   if (dem < 91) {
     tinh();
   } else {
-    document.getElementById("kq").innerHTML = "Đéo đứa nào kinh, dẹp mẹ đi =))";
+    // document.getElementById("kq").innerHTML = "Đéo đứa nào kinh, dẹp mẹ đi =))";
+    let confirm = document.getElementById("endgame");
+    confirm.classList.add("popup-open");
   }
 }
 function tinh() {
@@ -118,6 +120,11 @@ function reset() {
   if (!confirm.classList.contains("popup-open")) {
     confirm.classList.add("popup-open");
   }
+}
+
+function onOk() {
+  let confirm = document.getElementById("endgame");
+  confirm.classList.remove("popup-open");
 }
 
 function onCancel() {
