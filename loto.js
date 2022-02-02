@@ -135,3 +135,14 @@ function onCancel() {
 function onConfirm() {
   location.reload();
 }
+
+ClientScript.RegisterStartupScript(
+  Me.GetType,
+  "alert",
+  "alert('This student record already exist');window.location.reload();",
+  True
+);
+
+if (confirm("Successful Message")) {
+  window.location.reload();
+}
