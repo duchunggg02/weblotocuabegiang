@@ -54,9 +54,14 @@ table {
 }
 
 td {
-  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px groove #fff;
+  border-radius: 1px;
   width: 50px;
   height: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
 }
 
 #txt,
@@ -129,4 +134,9 @@ td {
 .btn-no {
   background-color: #eb171e;
   margin-left: 12px;
+}
+
+#soxo {
+  font-size: 32px;
+  font-weight: 600;
 }
