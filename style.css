@@ -1,64 +1,132 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica", sans-serif;
 }
 
 body {
-    height: 100vh;
-    background: #8eade6 no-repeat;
+  height: 100vh;
+  background: #8eade6 no-repeat;
 }
 
 .header {
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000;
-    text-transform: uppercase;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  text-transform: uppercase;
 }
 
 .btn {
-    height: 80px;
-    text-align: center;
-    line-height: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
 }
 
 button {
-    width: 100px;
-    height: 50px;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    color: white;
-    background-color: #000;
-    border-radius: 4px;
-    transition: linear 0.3s;
-    cursor: pointer;
+  width: 100px;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: white;
+  background-color: #000;
+  border-radius: 4px;
+  transition: linear 0.3s;
+  cursor: pointer;
+  padding: 8px 15px;
 }
 
 button:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 table {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 td {
-    border: 1px solid #fff;
-    width: 50px;
-    height: 50px;
+  border: 1px solid #fff;
+  width: 50px;
+  height: 50px;
 }
 
-#txt, #kq {
-    font-size: 24px;
-    color: #fff;
+#txt,
+#kq {
+  font-size: 24px;
+  color: #fff;
+}
+
+.popup-outer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.popup-open {
+  display: flex;
+}
+
+.popup-box {
+  width: 450px;
+  height: 180px;
+  background: #fff;
+  border-radius: 3px;
+}
+
+.popup-btn {
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background: #12e019;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  width: 80px;
+  height: 30px;
+}
+
+.st {
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+}
+
+.popup-header {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.popup-header h2 {
+  color: #eb171e;
+}
+
+.popup-content {
+  margin-bottom: 25px;
+}
+
+.popup-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-no {
+  background-color: #eb171e;
+  margin-left: 12px;
 }
