@@ -11,7 +11,7 @@ body {
 }
 
 .header {
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,9 +20,8 @@ body {
 }
 
 .btn {
-  height: 80px;
   text-align: center;
-  line-height: 80px;
+  margin-bottom: 10px;
 }
 
 button {
@@ -49,9 +48,9 @@ button:hover {
   align-items: center;
 }
 
-table {
+/* table {
   margin: 20px 0;
-}
+} */
 
 td {
   background-color: rgba(255, 255, 255, 0.1);
@@ -64,9 +63,8 @@ td {
   color: #000;
 }
 
-#txt,
-#kq {
-  font-size: 24px;
+#txt {
+  font-size: 20px;
   color: #fff;
 }
 
@@ -99,12 +97,12 @@ td {
   text-transform: uppercase;
   border: none;
   outline: none;
-  background: #12e019;
+  background: #ff6dc6;
   color: #fff;
   border-radius: 4px;
-  font-size: 12px;
-  width: 100px;
-  height: 30px;
+  font-size: 16px;
+  width: 103px;
+  height: 47px;
 }
 
 .st {
@@ -119,7 +117,7 @@ td {
 }
 
 .popup-header h2 {
-  color: #eb171e;
+  color: #000;
 }
 
 .popup-content {
@@ -129,14 +127,22 @@ td {
 .popup-footer {
   display: flex;
   justify-content: flex-end;
+  margin-top: 56px;
 }
 
 .btn-no {
-  background-color: #eb171e;
+  background-color: #8eade6;
   margin-left: 12px;
 }
 
-#soxo {
-  font-size: 32px;
+#soxo,
+#number-before {
+  font-size: 24px;
   font-weight: 600;
+}
+
+.output {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
 }
