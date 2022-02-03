@@ -101,6 +101,7 @@ function chay() {
     confirm.classList.add("popup-open");
   }
 }
+var arr = [""];
 function tinh() {
   var kiemtra = 0;
   var so = 0;
@@ -112,9 +113,13 @@ function tinh() {
       kiemtra = 1;
     }
   }
+  arr.push(so);
   document.getElementById(x).innerHTML = so;
   document.getElementById("soxo").innerHTML = so;
+  document.getElementById("number-before").innerHTML = arr[0];
+  arr.shift();
 }
+
 function reset() {
   let confirm = document.getElementById("popup");
   if (!confirm.classList.contains("popup-open")) {
